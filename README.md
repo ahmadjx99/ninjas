@@ -2,7 +2,8 @@ Demonstration app built on node.js and using trestle, mongodb, express, tablesor
 
 IT only takes a few commands to generate this app.
 
-Basics
+##Basics
+
 1. Install mongodb, node.js, express
 2. npm install trestle -g
 3. trestle app ninjas
