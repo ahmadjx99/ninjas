@@ -1,6 +1,6 @@
 Demonstration app built on node.js and using trestle, mongodb, express, tablesorter, bootstrap, and jade
 
-IT only takes a few commands to generate this app.
+It only takes a few commands to generate this app.
 
 ##Basics
 
