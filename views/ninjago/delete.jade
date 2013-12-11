@@ -1,0 +1,34 @@
+extends ../layout
+
+block content
+  h2.display-data Delete Ninjago?
+            
+  table.table.table-bordered
+    tr
+      th Property
+      th Value
+        tr
+          td Name
+          td= display(ninjago.name)
+        tr
+          td Color
+          td= display(ninjago.color)
+        tr
+          td Power
+          td= display(ninjago.power)
+        tr
+          td Weapon
+          td= display(ninjago.weapon)
+        tr
+          td Found
+          td= display(ninjago.found)
+        tr
+          td Turns
+          td= display(ninjago.turns)
+
+
+  form#ninjago-form.form-horizontal(action="/ninjagos/" + ninjago._id + "/delete", method="POST")
+    .form-actions
+      a.btn.btn-warning(href="/ninjagos") Back
+      | &nbsp;
+      input.btn.btn-danger(type="submit", value="Delete")

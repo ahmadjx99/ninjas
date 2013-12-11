@@ -1,0 +1,16 @@
+extends ../layout
+include ../mixins/form-helpers
+
+block content
+
+  form#ninjago-form.form-horizontal(action="/ninjagos/" + ninjago._id + "/edit", method="POST")
+    fieldset
+      legend Edit Ninjago
+
+      include form
+
+    .form-group
+      .col-md-offset-2.col-md-10
+        a.btn.btn-warning(href="/ninjagos") Back
+        | &nbsp;
+        button.btn.btn-primary(type="submit") Save

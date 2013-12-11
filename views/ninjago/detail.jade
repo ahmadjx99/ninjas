@@ -1,0 +1,35 @@
+extends ../layout
+
+block content
+  h2.display-data Ninjago Detail
+            
+  table.table.table-bordered
+    tr
+      th Property
+      th Value
+        tr
+          td Name
+          td= display(ninjago.name)
+        tr
+          td Color
+          td= display(ninjago.color)
+        tr
+          td Power
+          td= display(ninjago.power)
+        tr
+          td Weapon
+          td= display(ninjago.weapon)
+        tr
+          td Found
+          td= display(ninjago.found)
+        tr
+          td Turns
+          td= display(ninjago.turns)
+
+
+  .form-actions
+    a.btn.btn-warning(href="/ninjagos") Back
+    | &nbsp;
+    a.btn.btn-primary(href="/ninjagos/" + ninjago._id + "/edit") Edit
+    | &nbsp;
+    a.btn.btn-danger(href="/ninjagos/" + ninjago._id + "/delete") Delete
